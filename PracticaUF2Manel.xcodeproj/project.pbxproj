@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8110BB1A2201ECFB00708D00 /* PojoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8110BB192201ECFB00708D00 /* PojoDetail.swift */; };
+		8110BB1C2201F38500708D00 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8110BB1B2201F38500708D00 /* User.swift */; };
 		8135C14D21F8B72E00ADA500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135C14C21F8B72E00ADA500 /* AppDelegate.swift */; };
-		8135C14F21F8B72E00ADA500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135C14E21F8B72E00ADA500 /* ViewController.swift */; };
+		8135C14F21F8B72E00ADA500 /* ViewControllerSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135C14E21F8B72E00ADA500 /* ViewControllerSearch.swift */; };
 		8135C15221F8B72F00ADA500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8135C15021F8B72F00ADA500 /* Main.storyboard */; };
 		8135C15421F8B73000ADA500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8135C15321F8B73000ADA500 /* Assets.xcassets */; };
 		8135C15721F8B73000ADA500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8135C15521F8B73000ADA500 /* LaunchScreen.storyboard */; };
 		8135C16221F8B73000ADA500 /* PracticaUF2ManelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135C16121F8B73000ADA500 /* PracticaUF2ManelTests.swift */; };
 		8135C16D21F8B73000ADA500 /* PracticaUF2ManelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135C16C21F8B73000ADA500 /* PracticaUF2ManelUITests.swift */; };
+		8135C17B21F8B95500ADA500 /* TabBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8135C17A21F8B95500ADA500 /* TabBarCustom.swift */; };
+		8141ECEA2217142B004BAA52 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141ECE92217142B004BAA52 /* ProfileViewController.swift */; };
+		8141ECEC2217151C004BAA52 /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141ECEB2217151C004BAA52 /* CustomCollectionCell.swift */; };
+		81492908220B26C7000D995B /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81492907220B26C7000D995B /* SearchTableViewCell.swift */; };
+		81FF2BA42200C9FE00F70A2C /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF2BA32200C9FE00F70A2C /* HomeTableView.swift */; };
+		81FF2BA62200CB6F00F70A2C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF2BA52200CB6F00F70A2C /* CustomTableViewCell.swift */; };
+		81FF2BA82200CCE000F70A2C /* Pojo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF2BA72200CCE000F70A2C /* Pojo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8110BB192201ECFB00708D00 /* PojoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PojoDetail.swift; sourceTree = "<group>"; };
+		8110BB1B2201F38500708D00 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8135C14921F8B72E00ADA500 /* PracticaUF2Manel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticaUF2Manel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8135C14C21F8B72E00ADA500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8135C14E21F8B72E00ADA500 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8135C14E21F8B72E00ADA500 /* ViewControllerSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSearch.swift; sourceTree = "<group>"; };
 		8135C15121F8B72F00ADA500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8135C15321F8B73000ADA500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8135C15621F8B73000ADA500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +58,13 @@
 		8135C16821F8B73000ADA500 /* PracticaUF2ManelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticaUF2ManelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8135C16C21F8B73000ADA500 /* PracticaUF2ManelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticaUF2ManelUITests.swift; sourceTree = "<group>"; };
 		8135C16E21F8B73000ADA500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8135C17A21F8B95500ADA500 /* TabBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCustom.swift; sourceTree = "<group>"; };
+		8141ECE92217142B004BAA52 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8141ECEB2217151C004BAA52 /* CustomCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
+		81492907220B26C7000D995B /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		81FF2BA32200C9FE00F70A2C /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
+		81FF2BA52200CB6F00F70A2C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		81FF2BA72200CCE000F70A2C /* Pojo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pojo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +116,20 @@
 			isa = PBXGroup;
 			children = (
 				8135C14C21F8B72E00ADA500 /* AppDelegate.swift */,
-				8135C14E21F8B72E00ADA500 /* ViewController.swift */,
+				8135C14E21F8B72E00ADA500 /* ViewControllerSearch.swift */,
 				8135C15021F8B72F00ADA500 /* Main.storyboard */,
 				8135C15321F8B73000ADA500 /* Assets.xcassets */,
 				8135C15521F8B73000ADA500 /* LaunchScreen.storyboard */,
 				8135C15821F8B73000ADA500 /* Info.plist */,
+				8135C17A21F8B95500ADA500 /* TabBarCustom.swift */,
+				81FF2BA32200C9FE00F70A2C /* HomeTableView.swift */,
+				81FF2BA52200CB6F00F70A2C /* CustomTableViewCell.swift */,
+				81FF2BA72200CCE000F70A2C /* Pojo.swift */,
+				8110BB192201ECFB00708D00 /* PojoDetail.swift */,
+				8110BB1B2201F38500708D00 /* User.swift */,
+				81492907220B26C7000D995B /* SearchTableViewCell.swift */,
+				8141ECE92217142B004BAA52 /* ProfileViewController.swift */,
+				8141ECEB2217151C004BAA52 /* CustomCollectionCell.swift */,
 			);
 			path = PracticaUF2Manel;
 			sourceTree = "<group>";
@@ -256,7 +283,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8135C14F21F8B72E00ADA500 /* ViewController.swift in Sources */,
+				81492908220B26C7000D995B /* SearchTableViewCell.swift in Sources */,
+				8135C14F21F8B72E00ADA500 /* ViewControllerSearch.swift in Sources */,
+				8141ECEA2217142B004BAA52 /* ProfileViewController.swift in Sources */,
+				8141ECEC2217151C004BAA52 /* CustomCollectionCell.swift in Sources */,
+				81FF2BA82200CCE000F70A2C /* Pojo.swift in Sources */,
+				81FF2BA62200CB6F00F70A2C /* CustomTableViewCell.swift in Sources */,
+				8135C17B21F8B95500ADA500 /* TabBarCustom.swift in Sources */,
+				8110BB1C2201F38500708D00 /* User.swift in Sources */,
+				81FF2BA42200C9FE00F70A2C /* HomeTableView.swift in Sources */,
+				8110BB1A2201ECFB00708D00 /* PojoDetail.swift in Sources */,
 				8135C14D21F8B72E00ADA500 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
