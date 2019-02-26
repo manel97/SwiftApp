@@ -20,8 +20,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! SearchTableViewCell
         
+        tableView.allowsSelection = false
+        
+        let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! SearchTableViewCell        
         if buscando{
             myCell.cellTitle.text = filteredPojos[indexPath.row].pojoName
             myCell.cellImg.image = filteredPojos[indexPath.row].pojoImg
@@ -39,11 +41,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        
-        let isLiked = likedPojo(indexPath: indexPath)
-        
-        return UISwipeActionsConfiguration(actions: [isLiked])
-        
+        let estaLikeado = likedPojo(indexPath: indexPath)
+        return UISwipeActionsConfiguration(actions: [estaLikeado])
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -64,14 +63,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         action.title = !listaPojos[indexPath.row].isLiked ? "Like" : "Nah"
         action.backgroundColor = listaPojos[indexPath.row].isLiked ? UIColor.lightGray : UIColor.gray
-        
-        
         return action
     }
     
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

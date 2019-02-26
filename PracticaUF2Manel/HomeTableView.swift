@@ -61,22 +61,13 @@ class HomeTableView: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     @objc func clicked(sender:UIButton){
-        
         if sender.image(for: .normal) == UIImage(named: "favorite") {
             sender.setImage(UIImage(named: "emptyHeart"), for: .normal)
             listaPojos[sender.tag].isLiked = false
-            /*for pojo in likedPojos{
-                if (pojo.isLiked == false){
-                    likedPojos.remove(at: sender.tag)
-                }
-            }*/
-            
         } else{
             sender.setImage(UIImage(named: "favorite"), for: .normal)
             listaPojos[sender.tag].isLiked = true
-            likedPojos.append(listaPojos[sender.tag])
-        }
-        //print("pulsaste el boton \(sender.tag)")
+        }        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -99,15 +90,15 @@ class HomeTableView: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     @IBOutlet weak var tableView: UITableView!
     
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //tableView.reloadData()
         tableView.delegate = self
         tableView.dataSource = self
-        likedPojos = listaPojos.filter({$0.isLiked==true})
-        
+        //likedPojos = listaPojos.filter({$0.isLiked==true})
     }
-    
 }

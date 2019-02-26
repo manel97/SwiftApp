@@ -25,16 +25,19 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        collectionView.delegate = self
-        collectionView.dataSource = self        
+    override func viewDidAppear(_ animated: Bool) {
         likedPojos = listaPojos.filter({$0.isLiked==true})
         print(likedPojos)
+        collectionView.reloadData()
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()        
+        collectionView.delegate = self
+        collectionView.dataSource = self        
+        print(likedPojos)
+    }
 }
