@@ -20,6 +20,10 @@
 		8141ECEA2217142B004BAA52 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141ECE92217142B004BAA52 /* ProfileViewController.swift */; };
 		8141ECEC2217151C004BAA52 /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8141ECEB2217151C004BAA52 /* CustomCollectionCell.swift */; };
 		81492908220B26C7000D995B /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81492907220B26C7000D995B /* SearchTableViewCell.swift */; };
+		818E34D5222EED2000447CB3 /* moviesCSV.csv in Resources */ = {isa = PBXBuildFile; fileRef = 818E34D4222EED1F00447CB3 /* moviesCSV.csv */; };
+		818E34D7222EEDEB00447CB3 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E34D6222EEDEB00447CB3 /* CSV.swift */; };
+		818E34D9222EEED200447CB3 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E34D8222EEED100447CB3 /* Tools.swift */; };
+		818E34DB222EEF6C00447CB3 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818E34DA222EEF6C00447CB3 /* Movie.swift */; };
 		81FF2BA42200C9FE00F70A2C /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF2BA32200C9FE00F70A2C /* HomeTableView.swift */; };
 		81FF2BA62200CB6F00F70A2C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF2BA52200CB6F00F70A2C /* CustomTableViewCell.swift */; };
 		81FF2BA82200CCE000F70A2C /* Pojo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FF2BA72200CCE000F70A2C /* Pojo.swift */; };
@@ -62,6 +66,10 @@
 		8141ECE92217142B004BAA52 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8141ECEB2217151C004BAA52 /* CustomCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
 		81492907220B26C7000D995B /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		818E34D4222EED1F00447CB3 /* moviesCSV.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = moviesCSV.csv; path = ../../../../../Downloads/moviesCSV.csv; sourceTree = "<group>"; };
+		818E34D6222EEDEB00447CB3 /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CSV.swift; path = ../../../../../Downloads/CSV.swift; sourceTree = "<group>"; };
+		818E34D8222EEED100447CB3 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tools.swift; path = ../../../../../Downloads/Tools.swift; sourceTree = "<group>"; };
+		818E34DA222EEF6C00447CB3 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		81FF2BA32200C9FE00F70A2C /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
 		81FF2BA52200CB6F00F70A2C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		81FF2BA72200CCE000F70A2C /* Pojo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pojo.swift; sourceTree = "<group>"; };
@@ -115,6 +123,9 @@
 		8135C14B21F8B72E00ADA500 /* PracticaUF2Manel */ = {
 			isa = PBXGroup;
 			children = (
+				818E34D8222EEED100447CB3 /* Tools.swift */,
+				818E34D6222EEDEB00447CB3 /* CSV.swift */,
+				818E34D4222EED1F00447CB3 /* moviesCSV.csv */,
 				8135C14C21F8B72E00ADA500 /* AppDelegate.swift */,
 				8135C14E21F8B72E00ADA500 /* ViewControllerSearch.swift */,
 				8135C15021F8B72F00ADA500 /* Main.storyboard */,
@@ -130,6 +141,7 @@
 				81492907220B26C7000D995B /* SearchTableViewCell.swift */,
 				8141ECE92217142B004BAA52 /* ProfileViewController.swift */,
 				8141ECEB2217151C004BAA52 /* CustomCollectionCell.swift */,
+				818E34DA222EEF6C00447CB3 /* Movie.swift */,
 			);
 			path = PracticaUF2Manel;
 			sourceTree = "<group>";
@@ -258,6 +270,7 @@
 			files = (
 				8135C15721F8B73000ADA500 /* LaunchScreen.storyboard in Resources */,
 				8135C15421F8B73000ADA500 /* Assets.xcassets in Resources */,
+				818E34D5222EED2000447CB3 /* moviesCSV.csv in Resources */,
 				8135C15221F8B72F00ADA500 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +296,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				818E34DB222EEF6C00447CB3 /* Movie.swift in Sources */,
+				818E34D9222EEED200447CB3 /* Tools.swift in Sources */,
 				81492908220B26C7000D995B /* SearchTableViewCell.swift in Sources */,
 				8135C14F21F8B72E00ADA500 /* ViewControllerSearch.swift in Sources */,
 				8141ECEA2217142B004BAA52 /* ProfileViewController.swift in Sources */,
@@ -291,6 +306,7 @@
 				81FF2BA62200CB6F00F70A2C /* CustomTableViewCell.swift in Sources */,
 				8135C17B21F8B95500ADA500 /* TabBarCustom.swift in Sources */,
 				8110BB1C2201F38500708D00 /* User.swift in Sources */,
+				818E34D7222EEDEB00447CB3 /* CSV.swift in Sources */,
 				81FF2BA42200C9FE00F70A2C /* HomeTableView.swift in Sources */,
 				8110BB1A2201ECFB00708D00 /* PojoDetail.swift in Sources */,
 				8135C14D21F8B72E00ADA500 /* AppDelegate.swift in Sources */,

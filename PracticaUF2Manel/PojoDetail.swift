@@ -28,6 +28,6 @@ class PojoDetail: UIViewController {
         pojoImagen.image = img
         pojoNombre.text = nombre
         pojoDescripcion.text = descripcion        
-        isThePojoLiked.isHidden = listaPojos[counter].isLiked ? false : true
+        isThePojoLiked.isHidden = listaMovies[counter].isLiked ? false : true
     }
 }

@@ -20,7 +20,7 @@ class TabBarCustom: UITabBarController {
         
         tabBarItem = self.tabBar.items![0]
         //Asignamos la imagen al elemento sin seleccionar
-        tabBarItem.image = UIImage(named: "whiteHome")?.withRenderingMode(.alwaysOriginal)
+        tabBarItem.image = UIImage(named: "whiteHome")?.withRenderingMode(.alwaysOriginal)        
         // Y al seleccionado
         tabBarItem.selectedImage = UIImage(named: "blackHome")?.withRenderingMode(.alwaysOriginal)
         
