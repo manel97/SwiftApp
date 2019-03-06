@@ -83,12 +83,14 @@ class HomeTableView: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(listaMovies[indexPath.row].movieName)
         //declaro una variable de tipo view controller y le digo que se comporte como
         //la clase pojoDetail.
+        let precio = listaMovies[indexPath.row].moviePrice
+        
         let vc = storyboard?.instantiateViewController(withIdentifier: "pojoDetail") as! PojoDetail
         vc.nombre = listaMovies[indexPath.row].movieName
         vc.descripcion = listaMovies[indexPath.row].movieType
+        vc.precio = "Precio online: \(precio)"
         
         //le indicamos de donde saca las imagenes.
         let URL = NSURL(string: listaMovies[indexPath.row].movieImage)
